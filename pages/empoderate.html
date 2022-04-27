@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--transformaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--transformaciones-->
     <title>Empoderate</title>
 </head>
 <body>
@@ -42,7 +42,8 @@
             <a href="../pages/contacto.html">contacto</a>
         </section>
 
-        <div class="subTitulo">
+        <div data-aos="fade-up"
+            data-aos-duration="3000" class="subTitulo">
             <h2>Empoderate
             </h2>
             
@@ -54,7 +55,9 @@
         
 
         <div class="contenedorPrincipal">
-            <div  class="contenedor1">
+            <div  data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="contenedor1">
                 <img src="images/empo1.jpg" alt="">
                 <img src="images/empo6.jpg" alt="">
                 <img src="images/empo5.jpg" alt="">
@@ -63,11 +66,15 @@
 
         <div  class="contenedor2">
             <div  class="subContenedor2">
-                <img src="images/empo7.jpg" alt="">
-                <img src="images/empo4.jpg" alt="">
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos="fade-right" src="images/empo7.jpg" alt="">
+                <img  data-aos="fade-up"
+                data-aos-duration="3000" src="images/empo4.jpg" alt="">
             </div>
             <div class="contenedor3">
-                <img src="images/empo8.jpg" alt="">
+                <img data-aos="fade-up"
+                data-aos-duration="3000" src="images/empo8.jpg" alt="">
 
             </div>
         </div>
@@ -113,5 +120,9 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
     </body>
 </html>

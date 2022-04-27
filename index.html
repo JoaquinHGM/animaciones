@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/favicon (1).ico">
     <link rel="icon" href="css/favicon (1).ico">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
 </head>
 <body> 
@@ -34,6 +35,7 @@
             </td>
         </tr>
     </table> -->
+
     <!-- Navegacion-->
     <div class="contenedor">
         <nav class="contenedor__menu">
@@ -56,25 +58,13 @@
     
     
     
-        <div class="contenedorMega">
-            <div  class="mega1">
-                <img src="pages/images/empo1.jpg" alt="">
-                <img src="pages/images/empo6.jpg" alt="">
-                <img src="pages/images/empo5.jpg" alt="">
-            </div>
-        </div>
-
-        
-        <div  class="megar2">
-            <div  class="subMega2">
-                <img src="pages/images/empo7.jpg" alt="">
-                <img src="pages/images/empo4.jpg" alt="">
-            </div>
-        </div> 
-    </main>
+    
     <!-- cards -->
-    <!-- <main class="mainFlex"> 
-        <div class="convivencia">
+
+    <main class="mainFlex"> 
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="convivencia">
                 <section class="bloque__menu1">
                     <a href="pages/convivencias.html"><img class="portada" src="pages/images/convivencias.jpg" alt=""></a>
                     <h3 class="titulo">Convivencias</h3>
@@ -82,7 +72,9 @@
                     <button class="boton"><a class="texto__boton" href="pages/convivencias.html">Ver mas</a></button>
                 </section>
         </div>
-        <div class="empoderate">
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="empoderate">
             <section>
                 <article class="bloque__menu2">
                     <a href="pages/empoderate.html"><img class="portada" src="pages/images/empoderate.jpg" alt=""></a>
@@ -92,7 +84,9 @@
                 </article>
             </section>
         </div>
-        <div class="libros">
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="libros">
             <section class="bloque__men">
                 <article class="bloque__menu3">
                     <a href="pages/libros.html"><img class="portada" src="pages/images/libros.jpg" alt=""></a>
@@ -103,12 +97,18 @@
             </section>
         </div>
         
-    </main> -->
+    </main>
 
 
 </body>
 <footer class="footer">
     <p>Todos los derechos reservados.Claudio Gonzalez.</p>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>
 
