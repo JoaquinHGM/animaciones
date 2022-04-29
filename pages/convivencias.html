@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- data Aos animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Libreria Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Convivencias</title>
     
@@ -18,15 +22,37 @@
             <a href="https://www.youtube.com/channel/UCTniHdNmpvbQk5NFLE_-ALA"><img class="logo__redes" src="images/youtube.png" alt="youtube"></a>
         </div>
     </header>
-    <div class="contenedor">
+    <!-- <div class="contenedor">
         <nav class="contenedor__menu">
             <a href="../index.html" class="menu__boton">Inicio</a>
             <a href="empoderate.html" class="menu__boton">Empoderate</a>
             <a href="libros.html" class="menu__boton">Libros</a>
             <a href="contacto.html" class="menu__boton">Contacto</a>
         </nav>
-    </div>
+    </div> -->
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark contenedor__menu contenedor" >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-bs-controls="navbarTogglerDemo01" aria-bs-expanded="false" aria-bs-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Constelaciones</a>
+        <div class="collapse navbar-collapse" id="#navbarTogglerDemo01">
+            <ul class="navbar-nav m-auto s-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../pages/convivencias.html">Convivencia <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../pages/empoderate.html">Empoderate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/libros.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
 
@@ -39,53 +65,52 @@
             <p>Resignifica Tu Vida</p>
             <a href="../pages/contacto.html">contacto</a>
         </section>
-
         
-        <section class="contenedorXX_sombra"> 
         
-        <section class="section__one">
-            <div <!--class="prueba"  -->>
-                <img src="images/resignificaTuVida.jpg" alt="">
-                    <div class="titulo_parrafo">
-                        <h2>lorem</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet, aliquam delectus, perspiciatis, optio odit inventore quas doloribus veniam animi vel quod repellat? Eum, magni. Quam omnis doloribus odio exercitationem?</p>
-                    </div>
-                </img>
+        <div data-aos="flip-up"data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="card-group">
+            <div class="card">
+                <img src="../pages/images/convivenciaportada.jpg" class="card-img-top" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">montañas </h5>
+                    <p class="card-text">This is a  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam praesentium quos quam aut, sunt quaerat quia est quisquam dolorum explicabo voluptas at atque laudantium quas odit architecto saepe nisi asperiores? wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
             </div>
-            
-            
-            
-            
-        </section>
-                <div class="contenedorSombras"></div>
-            <section class="section__two">
-                <div>
-                    <img src="images/empo1.jpg" alt="">
-                        <div class="titulo_parrafo">
-                            <h2>lorem</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, error molestiae ea veritatis vitae fugit earum dolorum eius cumque nihil aut ducimus voluptate expedita, consequatur qui numquam? Expedita, laudantium beatae?</p>
-                        </div>
-                    </img>
+            <div class="card">
+                <img src="../pages/images/convivenciaportada.jpg" class="card-img-top" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">amacencers</h5>
+                    <p class="card-text">This Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus numquam quos molestias beatae in cumque quis accusantium eligendi autem impedit, adipisci, officiis ex laboriosam odio sunt tempora pariatur sint. has supporting text below as a natural lead-in to additional content.</p>
                 </div>
-            </section>
-            <section class="section__three">
-                <div>
-                    <img src="images/empo2.jpg" alt="">
-                        <div class="titulo_parrafo">
-                            <h2>lorem</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat hic voluptatum corporis, sapiente illum?</p>
-                        </div>
-                    </img>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
-            </section>
-        
-            
-            </section>
+            </div>
+            <div class="card">
+                <img src="../pages/images/convivenciaportada.jpg" class="card-img-top" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">aguas profundas</h5>
+                    <p class="card-text">This is a wider card Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vitae sapiente placeat repudiandae sequi atque nihil molestiae a aut dolores ipsum possimus doloremque, exercitationem repellendus eos earum et, illo soluta? with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
-
-
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 <footer class="footer">
     <p>Todos los derechos reservados.Claudio Gonzalez.</p>

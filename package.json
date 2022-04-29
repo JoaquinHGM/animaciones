@@ -1,0 +1,26 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "npm init",
+  "main": "\"joaquin\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaquinHGM/animaciones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaquinHGM/animaciones/issues"
+  },
+  "homepage": "https://github.com/JoaquinHGM/animaciones#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -48,8 +48,7 @@ hasta:max-width/
 @media screen and (min-width: 900px) {
     .bloque__menu1 .bloque__menu2 .bloque__menu3  {
     padding: 1rem 3rem;
-    overflow-inline:
-    }
+}
 }
 
 @media (max-width:340px) {
@@ -295,7 +294,7 @@ _________________________________________________________*/
 }
 .boton {
     text-decoration: none;
-    width: 150px;
+    
     border-radius: 120px;
     background-color: #FFC93C;
     color: #0F3057;
