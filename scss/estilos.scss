@@ -1,3 +1,45 @@
+
+Html{
+    Font:size 62.5%;
+        body {
+            background-color: var(--fondo);
+            h1 {
+                font-size: 3.5em;
+            }
+            h2 {
+                font-size: 2.7em;
+            }
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.25em;
+            }
+        }
+}
+
+// anidacion
+
+
+
+
+
+
+
+/*Variables*/
+
+// $width: 100%;
+// height: 150vh;
+
+
+
+
+
+
+
+
+
+
 ul {
     list-style-type: none;
     li {
@@ -10,6 +52,8 @@ ul {
         }
     }
 }
+
+
 li {
     color: blue;
     &:hover {
@@ -34,10 +78,8 @@ h1.title {
 div.container {
     color: $cool-red;
 }
-html {
-    font-size: 62.5%;
-}
 
-.logo__marca {
+img {
     width:$width ;
+    
 }

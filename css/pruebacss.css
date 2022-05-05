@@ -1,3 +1,17 @@
+Html {
+  Font: size 62.5%; }
+  Html body {
+    background-color: var(--fondo); }
+    Html body h1 {
+      font-size: 3.5em; }
+    Html body h2 {
+      font-size: 2.7em; }
+    Html body h3 {
+      font-size: 2em; }
+    Html body p {
+      font-size: 1.25em; }
+
+/*Variables*/
 ul {
   list-style-type: none; }
   ul li {
@@ -20,3 +34,6 @@ h1.title {
 
 div.container {
   color: #F44336; }
+
+img {
+  width: 200px; }
