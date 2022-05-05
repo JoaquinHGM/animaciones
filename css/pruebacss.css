@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none; }
+  ul li {
+    padding: 15px;
+    display: inline-block; }
+    ul li a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #444; }
+
+li {
+  color: blue; }
+  li:hover {
+    color: pink; }
+
+/*Variables*/
+h1.title {
+  font-size: normal 24px/1.5 "Open Sans", sans-serif;
+  color: #F44336; }
+
+div.container {
+  color: #F44336; }

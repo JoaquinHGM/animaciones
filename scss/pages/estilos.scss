@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none;
+    li {
+        padding: 15px;
+        display: inline-block;
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color:#444
+        }
+    }
+}
+li {
+    color: blue;
+    &:hover {
+        color: pink;
+    }
+}
+
+/*Variables*/
+
+// $title-font: normal 24px/1.5 "Opne Sans",sans-serif;
+// $cool-red:/* #f44336;*/
+// $box-shadow-bottom-only: 0 2px 1px rgba(0,0,0,0.2);
+
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$cool-red: #F44336;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+$width: 200px;
+h1.title {
+    font-size: $title-font;
+    color: $cool-red;
+}
+div.container {
+    color: $cool-red;
+}
+html {
+    font-size: 62.5%;
+}
+
+.logo__marca {
+    width:$width ;
+}
