@@ -1,7 +1,7 @@
 Html {
   Font: size 62.5%; }
   Html body {
-    background-color: var(--fondo); }
+    background-color: #008891; }
     Html body h1 {
       font-size: 3.5em; }
     Html body h2 {
@@ -11,29 +11,45 @@ Html {
     Html body p {
       font-size: 1.25em; }
 
-/*Variables*/
-ul {
-  list-style-type: none; }
-  ul li {
-    padding: 15px;
-    display: inline-block; }
-    ul li a {
-      text-decoration: none;
-      font-size: 16px;
-      color: #444; }
+.inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.682), rgba(0, 0, 0, 0.103)), url("../pages/images/7H1A0807.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .inicio h1 p {
+    font-size: 30px; }
+  .inicio h1 a {
+    background-color: #FFC93C;
+    color: #008891;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px; }
 
-li {
-  color: blue; }
-  li:hover {
-    color: pink; }
+.footer {
+  background-color: #0F3057;
+  color: #E7E7DE;
+  padding: 10px; }
 
-/*Variables*/
-h1.title {
-  font-size: normal 24px/1.5 "Open Sans", sans-serif;
-  color: #F44336; }
-
-div.container {
-  color: #F44336; }
-
-img {
-  width: 200px; }
+.contenedorMega {
+  margin-top: 10px; }
+  .contenedorMega .mega1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .contenedorMega .mega1 img {
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 5%;
+      padding-bottom: 5%; }
+  .contenedorMega .mega2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+    .contenedorMega .mega2 .subMega2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 5%;
+      padding-bottom: 5%; }

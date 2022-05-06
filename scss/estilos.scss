@@ -1,8 +1,17 @@
-
+// Variables
+$fondoBoton: #FFC93C;
+$colorDeFondo:  #008891;
+$fontinicio: 30px;
+$hoverX: width 100%;
+$hoverY: height 150vh;
+$textofondo: #E7E7DE;
+$backgroundHover:linear-gradient(rgba(0, 0, 0, 0.682),rgba(0, 0, 0, 0.103)), url("../pages/images/7H1A0807.jpg");
+$footer: #0F3057;
+$width:100%;
 Html{
     Font:size 62.5%;
         body {
-            background-color: var(--fondo);
+            background-color: $colorDeFondo;
             h1 {
                 font-size: 3.5em;
             }
@@ -14,72 +23,50 @@ Html{
             }
             p {
                 font-size: 1.25em;
-            }
+            }}}
+.inicio {
+    background:$backgroundHover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    h1 {
+            p {
+                font-size: $fontinicio;}
+            a {
+                background-color:$fondoBoton;
+                color: $colorDeFondo;
+                font-size: $fontinicio;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 20px;
+            }}}
+.footer {
+    background-color: $footer;
+    color: $textofondo;
+    padding: 10px;
+}
+.contenedorMega {
+    margin-top: 10px;
+        .mega1 {
+            width: $width;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+                img {
+                    width: $width;
+                    justify-content: space-between;
+                    padding-left: 5%;
+                    padding-bottom: 5%;
+                } 
         }
-}
-
-// anidacion
-
-
-
-
-
-
-
-/*Variables*/
-
-// $width: 100%;
-// height: 150vh;
-
-
-
-
-
-
-
-
-
-
-ul {
-    list-style-type: none;
-    li {
-        padding: 15px;
-        display: inline-block;
-        a {
-            text-decoration: none;
-            font-size: 16px;
-            color:#444
-        }
-    }
-}
-
-
-li {
-    color: blue;
-    &:hover {
-        color: pink;
-    }
-}
-
-/*Variables*/
-
-// $title-font: normal 24px/1.5 "Opne Sans",sans-serif;
-// $cool-red:/* #f44336;*/
-// $box-shadow-bottom-only: 0 2px 1px rgba(0,0,0,0.2);
-
-$title-font: normal 24px/1.5 'Open Sans', sans-serif;
-$cool-red: #F44336;
-$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-$width: 200px;
-h1.title {
-    font-size: $title-font;
-    color: $cool-red;
-}
-div.container {
-    color: $cool-red;
-}
-
-img {
-    width:$width ;
-    
-}
+        .mega2 {
+            width:$width;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+                .subMega2 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding-left: 5%;
+                    padding-bottom: 5%;
+                }}}
