@@ -18,6 +18,18 @@ $webkit-box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $moz-box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $width:100%;
+
+
+@mixin celular {
+    @media (max-width:480px){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width:768px){
+        @content;
+    }
+}
 Html{
     Font:size 62.5%;
     body {
@@ -58,35 +70,37 @@ Html{
     color: $textofondo;
     padding: 10px;
 }
+
+
 .contenedorMega {
     margin-top: 10px;
         .mega1 {
             width: $width;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-                img {
-                    width: $width;
-                    justify-content: space-between;
-                    padding-left: 5%;
-                    padding-bottom: 5%;
+            img {
+                width: $width;
+                justify-content: space-between;
+                padding-left: 5%;
+                padding-bottom: 5%;
                 } 
         }
         .mega2 {
             width:$width;
             display: grid;
             grid-template-columns: 1fr 2fr;
-                .subMega2 {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    padding-left: 5%;
-                    padding-bottom: 5%;
-                }}}
-// Convivencia
-.hero {
-    width: $hoverX;
-    height:$hoverY;
-    color: $textofondo;
-    display: flex;
+            .subMega2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-left: 5%;
+                padding-bottom: 5%;
+            }}}
+            // Convivencia
+            .hero {
+                width: $hoverX;
+                height:$hoverY;
+                color: $textofondo;
+                display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -132,10 +146,10 @@ Html{
     display: flex;
     flex-direction: row;
     font-family: $fontfamily;
-        img {
-            padding-left: 40px;
-            font-family: $fontfamily;
-        }
+    img {
+        padding-left: 40px;
+        font-family: $fontfamily;
+    }
 }
 .subtitulo {
     text-align: center;
@@ -147,13 +161,14 @@ Html{
     -moz-box-shadow: $moz-box-shadow2;
     box-shadow:$box-shadow2;
 }
+// extends
 .section__one {
     display: flex;
     margin-bottom: 40px;
-        div {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
+    div {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
             padding-left: 5%;
             padding-right: 5%;
             h2 {
@@ -185,30 +200,19 @@ Html{
             }
         }
     }
-.section__two {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    div {
-        img {
-            width: 400px;
-            padding-right: 100px;
+    .section__two {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        div {
+            img {
+                width: 400px;
+                padding-right: 100px;
+            }
+            
         }
-        
-    }
 }
-@mixin celular {
-    @media (max-width:480px){
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media (max-width:768px){
-        @content;
-    }
-}
-.gridPadre {
+.mega1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(2, auto);
@@ -216,18 +220,15 @@ Html{
     gap: 0.5rem;
 }
 @include celular {
-    .gridPadre {
+    .mega1 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3,auto);
     }
     
 }
-
 @include tablet {
-    .gridPadre {
+    .mega1 {
         display: flex;
         flex-direction: column;
     }
-}
-
-    
+}   
