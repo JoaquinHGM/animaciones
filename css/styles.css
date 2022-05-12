@@ -29,6 +29,10 @@ hasta:max-width/
     }
 }   */
 
+@media screen {
+    
+}
+
 /* 
 @media only screen and (min-width: 961px) {
     body {
@@ -107,7 +111,7 @@ _________________________________________________________*/
 
 .encabezado {
     background-color: var(--header);
-    padding: 10px;
+    padding: 3px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -123,13 +127,14 @@ _________________________________________________________*/
     border-radius: 20px;
 }
 .logo__redes {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 .encabezado__logo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    color: white;
 }
 
 
