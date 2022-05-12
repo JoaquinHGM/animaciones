@@ -18,25 +18,24 @@ $webkit-box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $moz-box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $width:100%;
-
 Html{
     Font:size 62.5%;
-        body {
-            background-color: $colorDeFondo;
-            h1 {
-                font-size: 3.5em;
-            }
-            h2 {
-                font-size: 2.7em;
-            }
-            h3 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1.25em;
-            }}}
-// inicio
-            .inicio {
+    body {
+        background-color: $colorDeFondo;
+        h1 {
+            font-size: 3.5em;
+        }
+        h2 {
+            font-size: 2.7em;
+        }
+        h3 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.25em;
+        }}}
+        // inicio
+        .inicio {
     background:$backgroundHover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,3 +197,37 @@ Html{
         
     }
 }
+@mixin celular {
+    @media (max-width:480px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:768px){
+        @content;
+    }
+}
+.gridPadre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, auto);
+    height: 100%;
+    gap: 0.5rem;
+}
+@include celular {
+    .gridPadre {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,auto);
+    }
+    
+}
+
+@include tablet {
+    .gridPadre {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+    

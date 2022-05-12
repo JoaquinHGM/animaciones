@@ -154,3 +154,20 @@ Html {
   .section__two div img {
     width: 400px;
     padding-right: 100px; }
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, auto);
+  height: 100%;
+  gap: 0.5rem; }
+
+@media (max-width: 480px) {
+  .gridPadre {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto); } }
+
+@media (max-width: 768px) {
+  .gridPadre {
+    display: flex;
+    flex-direction: column; } }

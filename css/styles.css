@@ -110,7 +110,7 @@ _________________________________________________________*/
 
 
 .encabezado {
-    background-color: var(--header);
+    background-color: black;
     padding: 3px;
     display: flex;
     flex-direction: row;
@@ -120,6 +120,7 @@ _________________________________________________________*/
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    color: #E7E7DE;
     
 }
 .logo__marca{
@@ -205,7 +206,7 @@ _________________________________________________________*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.682),rgba(0, 0, 0, 0.103)), url("../pages/images/7H1A0807.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.682),rgba(0, 0, 0, 0.103)), url("../pages/images/inicio.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -776,6 +777,11 @@ img {
 
 /*_________________CONTACTO________________*/
 
+.margin {
+    margin-left:0px;
+    margin-right: 0px;
+    
+}
 
 .formulario__contacto {
     background-color: #0F3057;
@@ -804,7 +810,7 @@ img {
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Sacramento', cursive;
     border-radius: 20px;
-    }
+}
 
 
 .campos {
@@ -827,7 +833,9 @@ img {
 }
 
 /*_________________LIBRO________________*/
-
+.tamaño img {
+    width: 50%;
+}
 .introBook {
     
     display: grid;
