@@ -5,10 +5,20 @@ $colorDeFondo:  #008891;
 $footer:#0F3057;
 $textofondo: #E7E7DE;
 $fontinicio: 30px;
-$hoverX: width 100%;
-$hoverY: height 150vh;
+$fontfamily:'Montserrat Alternates', sans-serif;
+$fonta:60px;
+$hoverX: 100%;
+$hoverY: 150vh;
 $backgroundHover:linear-gradient(rgba(0, 0, 0, 0.682),rgba(0, 0, 0, 0.103)), url("../pages/images/7H1A0807.jpg");
+$backgroundSombra:rgba(255, 255, 255, 1);
+$webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+$moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+$box-shadow:0px 11px 15px -9px rgba(0,0,0,0.63);
+$webkit-box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
+$moz-box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
+$box-shadow2: inset -23px -1px 222px 25px rgba(0,0,0,0.57);
 $width:100%;
+
 Html{
     Font:size 62.5%;
         body {
@@ -25,7 +35,8 @@ Html{
             p {
                 font-size: 1.25em;
             }}}
-.inicio {
+// inicio
+            .inicio {
     background:$backgroundHover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,3 +83,118 @@ Html{
                     padding-bottom: 5%;
                 }}}
 // Convivencia
+.hero {
+    width: $hoverX;
+    height:$hoverY;
+    color: $textofondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $backgroundHover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero_convivencia {
+    h1 {
+        font-size:$fonta ;
+        font-weight: bold;
+        p {
+            font-size: $fontinicio;
+            margin-top: 20px;
+        }
+        a {
+            background-color: $fondoBoton;
+            color: $colorDeFondo;
+            text-decoration: none;
+            font-size: $fontinicio;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top:20px;
+        }
+    }
+}
+.contenedorXX {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.sombra {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: $backgroundSombra;
+    -webkit-box-shadow:$webkit-box-shadow;
+    -moz-box-shadow:$moz-box-shadow;
+    box-shadow: $box-shadow;
+}
+.parrafoConvivencia {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    font-family: $fontfamily;
+        img {
+            padding-left: 40px;
+            font-family: $fontfamily;
+        }
+}
+.subtitulo {
+    text-align: center;
+    justify-content: space-between;
+    color: $textofondo;
+    padding-bottom: 50px;
+    font-family: $fontfamily;
+    -webkit-box-shadow: $webkit-box-shadow2;
+    -moz-box-shadow: $moz-box-shadow2;
+    box-shadow:$box-shadow2;
+}
+.section__one {
+    display: flex;
+    margin-bottom: 40px;
+        div {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            h2 {
+                color: $fondoBoton;
+                font-size: 30px;
+                font-family: $fontfamily;
+                display: flex;
+                flex-direction: row;
+                flex-direction: end;
+            }
+            .titulo_parrafo {
+                flex-direction: row;
+                align-items: flex-end;
+                font-family: $fontfamily;
+                -webkit-box-shadow:$webkit-box-shadow2;
+                -moz-box-shadow: $moz-box-shadow2;
+                box-shadow:$box-shadow2;
+                background-color: #7f898c;    
+                background-color: #b50daf;
+                background-color: #0e6ec2;
+            }
+            img {
+                width: 300px;
+                height: 300px;
+                margin-left: 20px;
+                margin-top: 20px;
+                border:solid 1px;
+                
+            }
+        }
+    }
+.section__two {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    div {
+        img {
+            width: 400px;
+            padding-right: 100px;
+        }
+        
+    }
+}
