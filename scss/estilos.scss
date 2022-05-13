@@ -30,6 +30,10 @@ $width:100%;
         @content;
     }
 }
+
+@media only screen and (max-width:3) {
+    
+}
 Html{
     Font:size 62.5%;
     body {
