@@ -231,4 +231,123 @@ Html{
         display: flex;
         flex-direction: column;
     }
-}   
+}
+// contacto
+.margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.formulario__contacto {
+    background-color: #0F3057;
+    width: 500px;
+    height: 1000px;
+    margin-left: 50px;
+    left: 100px;
+    border-radius: 10px;
+    color: #E7E7DE;
+    text-align: start;
+    text-align: start;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    justify-content: space-between;
+}
+.legend {
+    color: #FFC93C;
+    background-color: #00587A;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Sacramento', cursive;
+    border-radius: 20px;
+}
+.campos {
+    width: 80%;
+    padding: 0px;
+    left: 30px;
+    text-align: start;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+    justify-content: space-between;
+    
+}
+.boton__enviar  {
+    background-color: #FFC93C;
+    border-radius: 10px;
+}
+// libro
+.tamaño {
+    width: 50%;
+}
+$book: 1fr 1fr;
+$flex-direction: column;
+.introBook {
+    display: grid;
+    grid-template-columns:$book;
+    flex-direction:$flex-direction;
+    margin-top: 30px;
+}
+.subLibro {
+    display: grid;
+    grid-template-columns: $book;
+    flex-direction: $flex-direction;
+}
+.subimg {
+    display: flex;
+    margin-left: 30px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-content: center;
+    iframe {
+        width: $width;
+        border: solid 5px;
+    }
+}
+.book1 {
+    display: flex;
+    margin-left: 30px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    img {
+        width: $width;
+    }
+}
+.bookTexto {
+    padding-top: 10px;
+    margin-top: 30px;
+}
+.book2 {
+    display: flex;
+    margin-left: 30px;
+    padding-right: 100px;
+    img {
+        width: $width;
+        margin-top: 30px;
+    }
+}
+
+.boker {
+    display: grid;
+    grid-template-columns: $book;
+    margin-top: 100px;
+    
+}
+
+.libros__varios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-top: 100px;
+}
+.libros__varios img {
+    width: $width;
+    height: 200px;
+}
